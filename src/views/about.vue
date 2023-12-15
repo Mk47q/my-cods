@@ -6,7 +6,7 @@ import imgwidth from '@/components/imgwidth.vue'
     <div id="my-main">
         <imgwidth></imgwidth>
         <div class="box-4img">
-            <div class="box-img1">
+            <div class="box-img1 , my-imgs">
                 <img src="../assets/nas1.jpg" alt="">
                 <div class="ab">
                     <p>Richard Garroitt</p>
