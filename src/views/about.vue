@@ -6,32 +6,45 @@ import imgwidth from '@/components/imgwidth.vue'
     <div id="my-main">
         <imgwidth></imgwidth>
         <div class="box-4img">
-            <div class="box-img1">
+            <div class="box-img1 , my-imgs">
                 <img src="../assets/nas1.jpg" alt="">
                 <div class="ab">
                     <p>Richard Garroitt</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
                 </div>
             </div>
-            <div class="box-img2">
+            <div class="box-img2 , my-imgs">
                 <img src="../assets/nas2.jpg" alt="">
                 <div class="ab">
                     <p>Dennis Anthony Tito</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
                 </div>
             </div>
-            <div class="box-img3">
+            <div class="box-img3 , my-imgs">
                 <img src="../assets/nas3.jpg" alt="">
                 <div class="ab">
                     <p>Mark Shuttleworth</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
                 </div>
             </div>
-            <div class="box-img4">
+            <div class="box-img4 , my-imgs">
                 <img src="../assets/nas4.jpg" alt="">
                 <div class="ab">
                     <p>Anousheh Ansari</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
+                </div>
+            </div>
+        </div>
+        <div class="box-boton">
+            <div class="box-sub-paragraf">
+                <div class="sub-paragraf">
+                    <h2>Transcendence</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius quas beatae amet sit, unde nesciunt necessitatibus dolore quisquam ex reprehenderit, impedit enim cumque architecto accusamus delectus, assumenda itaque explicabo quaerat Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime voluptate dolorum inventore! Velit quam tempora quisquam quidem quae voluptatibus consectetur repellendus quo ex tempore ea, laborum quaerat rem illum animi Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga hic explicabo velit sint, accusamus amet error accusantium nostrum necessitatibus quisquam nesciunt repudiandae. Blanditiis quae voluptatem explicabo quaerat illo ipsam sequi! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi vero eum ipsa rem distinctio illo nesciunt earum atque numquam suscipit aliquid, laboriosam eosias Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nesciunt dignissimos dicta hic enim qui, perspiciatis minus alias. Deserunt nesciunt saepe dolorem dolorum placeat, possimus ipsum rerum vel nostrum expedita Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisicing elit. Doloremque, sed error tempore omnis similique ea nemo possimus, iusto expedita animi exercitationem quos saepe enim placeat dignissimos ab eum, necessitatibus facere Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repellat incidunt asperiores aliquam esse, quibusdam obcaecati ad hic rem quod quam facere temporibus itaque error? Saepe aut corrupti quaerat ut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt cupiditate obcaecati optio iure nulla odit neque laborum quia veritatis, explicabo repellat animi ipsam autem magni natus nam repudiandae ab id! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic repellendus nemo, dicta architecto maxime maiores aperiam fugit vitae, aspernatur, sunt ducimus. Porro nisi tenetur sequi enim ipsam mollitia architecto ducimus.</p>
+                </div>
+            </div>
+            <div class="box-sub-img">
+                <div class="sub-img">
+                    <img src="../assets/fazai.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -41,6 +54,10 @@ import imgwidth from '@/components/imgwidth.vue'
 <style scoped>
 #my-main{
     background-color: rgb(36, 41, 31);
+    color: #bbb4ab;
+}
+h2{
+    color: #6c770b;
 }
 .box-4img{
     width: 100%;
@@ -75,47 +92,14 @@ import imgwidth from '@/components/imgwidth.vue'
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
 }
-.box-img1:hover p{
+.my-imgs:hover p{
     opacity: 1;
     transform: translateY(0);
 }
-.box-img2:hover p{
-    opacity: 1;
-    transform: translateY(0);
-}
-.box-img3:hover p{
-    opacity: 1;
-    transform: translateY(0);
-}
-.box-img4:hover p{
-    opacity: 1;
-    transform: translateY(0);
-}
-.box-img1:hover .ab {
+.my-imgs:hover .ab {
     height: 175px;
 }
-.box-img2:hover .ab{
-    height: 175px;
-}
-.box-img3:hover .ab{
-    height: 175px;
-}
-.box-img4:hover .ab{
-    height: 175px;
-}
-.box-img1{
-    width: 250px;
-    height: 400px;
-}
-.box-img2{
-    width: 250px;
-    height: 400px;
-}
-.box-img3{
-    width: 250px;
-    height: 400px;
-}
-.box-img4{
+.my-imgs{
     width: 250px;
     height: 400px;
 }
@@ -123,19 +107,7 @@ import imgwidth from '@/components/imgwidth.vue'
     .box-4img{
         height: 490px;
     }
-    .box-img1{
-        width: 200px;
-        height: 300px;
-    }
-    .box-img2{
-        width: 200px;
-        height: 300px;
-    }
-    .box-img3{
-        width: 200px;
-        height: 300px;
-    }
-    .box-img4{
+    .my-imgs{
         width: 200px;
         height: 300px;
     }
@@ -144,34 +116,13 @@ import imgwidth from '@/components/imgwidth.vue'
     .box-4img{
         height: 570px;
     }
-    .box-img1{
+    .my-imgs{
         width: 150px;
         height: 300px;
     }
-    .box-img2{
-        width: 150px;
-        height: 300px;
-    }
-    .box-img3{
-        width: 150px;
-        height: 300px;
-    }
-    .box-img4{
-        width: 150px;
-        height: 300px;
-    }
-    .box-img1:hover .ab {
+    .my-imgs:hover .ab{
     height: 250px;
     }
-    .box-img2:hover .ab {
-    height: 250px;
-    }
-    .box-img3:hover .ab {
-    height: 250px;
-    }
-    .box-img4:hover .ab {
-    height: 250px;
-}
 }
 @media only screen and (max-width: 638px){
     .box-4img{
@@ -183,20 +134,13 @@ import imgwidth from '@/components/imgwidth.vue'
     .box-img3{
         display: none;
     }
-    .box-img1{
+    .my-imgs{
         width: 200px;
         height: 400px;
     }
-    .box-img4{
-        width: 200px;
-        height: 400px;
-    }
-    .box-img1:hover .ab {
+    .my-imgs:hover .ab {
     height: 175px;
     }
-    .box-img4:hover .ab {
-    height: 175px;
-}
 }
 @media only screen and (max-width: 434px){
     .box-img1{
@@ -204,6 +148,67 @@ import imgwidth from '@/components/imgwidth.vue'
     }
     .box-img4{
         width: 300px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box-boton{
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+}
+.box-sub-img{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.sub-img{
+    height: 466px;
+    padding-right: 10px;
+}
+.sub-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.box-sub-paragraf{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.sub-paragraf{
+    box-sizing: border-box;
+    /* width: 740px; */
+    direction: rtl;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+@media only screen and (max-width: 570px) {
+    .box-sub-img{
+        display: none;
+    }
+    .box-sub-paragraf{
+        width: 100%;
     }
 }
 </style>

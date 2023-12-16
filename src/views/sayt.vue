@@ -30,7 +30,7 @@ import imgwidth from '@/components/imgwidth.vue'
                 <div class="box-p">
                     <h2>Features of the planets</h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, explicabo facere unde fuga, distinctio id eveniet rem a repellendus consequatur? Soluta perspiciatis in incidunt quos rerum, natus optio! Magnam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo cumque architecto deleniti dolorem! Ut sequi, adipisci autem est praesentium aliquid alias laborum, quaerat, deleniti doloremque itaque nam beatae magni officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum quisquam modi enim iure delectus sunt recusandae quos at nam facere beatae eligendi, voluptatum neque. Doloribus iusto dolor dignissimos porro! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur error aperiam et possimus blanditiis perspiciatis voluptas nostrum voluptate numquam quisquam nemo, expedita explicabo unde, laborum temporibus! Odio rerum inventore harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores, repudiandae ullam fugiat fugit in distinctio nihil. Amet esse tenetur aliquid maxime beatae provident repellendus accusamus recusandae, eum sint. Rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea eius corporis natus similique ullam laborum, itaque assumenda, voluptates illum exercitationem corrupti commodi, iusto pariatur fugit quasi. Tempora, ipsam labore.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint quaerat, explicabo facere unde fuga, distinctio id eveniet rem a repellendus consequatur? Soluta perspiciatis in incidunt quos rerum, natus optio! Magnam? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo cumque architecto deleniti dolorem! Ut sequi, adipisci autem est praesentium aliquid alias laborum, quaerat, deleniti doloremque itaque nam beatae magni officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur harum quisquam modi enim iure delectus sunt recusandae quos at nam facere beatae eligendi, voluptatum neque. Doloribus iusto dolor dignissimos porro! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur error aperiam et possimus blanditiis perspiciatis voluptas nostrum voluptate numquam quisquam nemo, expedita explicabo unde, laborum temporibus! Odio rerum inventore harum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores, repudiandae ullam fugiat fugit in distinctio nihil. Amet esse tenetur aliquid maxime beatae provident repellendus accusamus recusandae, eum sint. Rerum? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ea eius corporis natus similique ullam laborum, itaque assumenda, voluptates illum exercitationem corrupti commodi, iusto pariatur fugit quasi. Tempora, ipsam labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur recusandae accusantium dolore iste dolorum? Ipsam perspiciatis consequuntur sed harum at dolorem, similique, sit soluta aspernatur dolor pariatur perferendis laborum eos! Lorem ipsum dolor sit amet consectetur adipisicing elit. A aperiam necessitatibus ipsa voluptatibus sed magnam cum rerum ea. Iste aspernatur omnis exercitationem alias consectetur odit placeat ratione voluptates debitis animi. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel dignissimos consectetur commodi recusandae voluptatum nulla minus officia, ex maiores facere magnam ipsum accusamus corporis, a praesentium rem esse? Suscipit, neque? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim odio atque ipsum molestias distinctio cumque eaque, aliquid, molestiae quasi eligendi quisquam exercitationem sint illo quibusdam assumenda ratione dolore, autem delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati deserunt fugit nisi nesciunt iure. Dolorem molestias culpa deleniti tenetur quidem vel nesciunt hic optio debitis. Cupiditate amet porro nam officia.
                     </p>
                 </div> 
             </div>
@@ -108,6 +108,7 @@ p , h1 , h2{
 .box-img{
     width: 310px;
     max-height: 650px;
+    padding-left: 10px;
 }
 .box-img img{
     width: 100%;
@@ -130,6 +131,12 @@ p , h1 , h2{
     height: 20px;
     background-color: #2f3215;
     margin-top: 100px;
+}
+.img-right{
+    transition: all 0.4s ease;
+}
+.img-left{
+    transition: all 0.4s ease;
 }
 @font-face {
     font-family: sanas;
@@ -173,4 +180,3 @@ p , h1 , h2{
     }
 }
 </style>
-

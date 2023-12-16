@@ -13,7 +13,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10px;
+    padding-top: 20px;
 }
 .com-box p{
     margin: 0px;
