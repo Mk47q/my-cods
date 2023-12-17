@@ -110,6 +110,9 @@
     display: flex;
     justify-content: space-around;
 }
+a:hover{
+    color: red;
+}
 .foter-icon img{
     width: 40px;
     height: 100%;
