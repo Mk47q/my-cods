@@ -6,22 +6,22 @@
         <div id="my-foter">
             <div class="foters">
                 <div class="foter-top">
-                    <div class="box-foter1">
+                    <div class="box-foter1 , box-foters">
                         <h3>دسترسی سریع</h3>
                         <ul class="lists">
                             <li><RouterLink to="/">صفحه اصلی</RouterLink></li>
                             <li><RouterLink to="about">صفحه درباره ما</RouterLink></li>
-                            <li><RouterLink to="">تماس با ما</RouterLink></li>
+                            <li><RouterLink to="call">تماس با ما</RouterLink></li>
                         </ul>
                     </div>
-                    <div class="box-foter2">
+                    <div class="box-foter2 , box-foters">
                         <h3>وب سایت</h3>
                         <ul class="lists">
                             <li><RouterLink to="">درباره شرکت</RouterLink></li>
                             <li><RouterLink to="">سوالات متداول</RouterLink></li>
                         </ul>
                     </div>
-                    <div class="box-foter3">
+                    <div class="box-foter3 , box-foters">
                         <h3>پشتیبانی</h3>
                         <ul class="lists">
                             <li><RouterLink to="">اطلاعات تماس</RouterLink></li>
@@ -50,7 +50,8 @@
 </template>
 <style scoped>
     #my-foter{
-    background-color: #242611;
+    /* background-color: #242611; */
+    background-color: rgb(17, 0, 0);
     width:100%; 
     direction: rtl;
 }
@@ -80,17 +81,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #bbb4ab;
 }
-.box-foter1{
-    width: 100%;
-    border-left: 1px solid rgb(22, 20, 20);
-    margin-left: 5px;
-}
-.box-foter2{
-    width: 100%;
-    border-left: 1px solid rgb(22, 20, 20);
-    margin-left: 5px;
-}
-.box-foter3{
+.box-foters{
     width: 100%;
     border-left: 1px solid rgb(22, 20, 20);
     margin-left: 5px;
@@ -107,7 +98,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-color: #2f3215;
+    background-color: rgb(40, 0, 0);
 }
 .foter-logo img{
     width: 40px;

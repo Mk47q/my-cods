@@ -30,7 +30,7 @@
                 <ul class="list-hed">
                     <li class="sub-list"><RouterLink to="/">صفحه اصلی</RouterLink></li>
                     <li class="sub-list"><RouterLink to="about">صفحه درباره ما</RouterLink></li>
-                    <li class="sub-list"><RouterLink to="">تماس باما</RouterLink></li>
+                    <li class="sub-list"><RouterLink to="call">تماس باما</RouterLink></li>
                 </ul>
             </div>
         </div>
@@ -65,7 +65,7 @@
 .p1 h2{
     margin: 1px;
     padding-left: 2px;
-    color: #6c770b;
+    color: red;
 }
 .p2 p{
     margin: 0px;
@@ -119,7 +119,7 @@
     height: 100px;
 }
 .hed2{
-    background-color: #242611;
+    background-color: rgb(40, 0, 0);
     width: 100%;
 }
 .list-hed{

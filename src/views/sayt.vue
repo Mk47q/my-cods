@@ -48,7 +48,8 @@ p , h1 , h2{
     color: #bbb4ab;
 }
 #my-main{
-    background-color: rgb(36, 41, 31);
+    /* background-color: rgb(36, 41, 31); */
+    background-color: rgb(15, 15, 15);
     width:100%;
 }
 .imgs{
@@ -98,7 +99,7 @@ p , h1 , h2{
 .paragraf h1{
     margin-bottom: 0px;
     padding-left: 10px;
-    color: #6c770b;
+    color: rgb(255, 0, 0);
 }
 .box-img-p{
     width: 100%;
@@ -124,12 +125,12 @@ p , h1 , h2{
     margin: 0px;
 }
 .box-p  h2{
-    color: #6c770b;
+    color: red;
 }
 .end{
     width: 100%;
     height: 20px;
-    background-color: #2f3215;
+    background-color: rgb(40, 0, 0);
     margin-top: 100px;
 }
 .img-right{

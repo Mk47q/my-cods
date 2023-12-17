@@ -48,16 +48,17 @@ import imgwidth from '@/components/imgwidth.vue'
                 </div>
             </div>
         </div>
+        <div class="end"></div>
     </div>
 </main>
 </template>
 <style scoped>
 #my-main{
-    background-color: rgb(36, 41, 31);
+    background-color: rgb(15, 15, 15);
     color: #bbb4ab;
 }
 h2{
-    color: #6c770b;
+    color: red;
 }
 .box-4img{
     width: 100%;
@@ -73,10 +74,10 @@ h2{
     border-radius: 20px;
 }
 .box-4img p {
-    color: rgb(30, 4, 4);
+    color: rgb(255, 159, 159);
 }
 .ab{
-    background-color: cornflowerblue;
+    background-color: rgb(40, 0, 0);
     width: 100%;
     height: 0px;
     border-radius: 20px;
@@ -92,6 +93,9 @@ h2{
     transform: translateY(-100%);
     transition: all 0.5s ease-in-out;
 }
+.my-imgs{
+    transition: all 0.5s ease-in-out;
+}
 .my-imgs:hover p{
     opacity: 1;
     transform: translateY(0);
@@ -102,6 +106,12 @@ h2{
 .my-imgs{
     width: 250px;
     height: 400px;
+}
+.end{
+    width: 100%;
+    height: 20px;
+    background-color: rgb(40, 0, 0);
+    margin-top: 50px;
 }
 @media only screen and (max-width: 1035px) {
     .box-4img{
@@ -150,26 +160,6 @@ h2{
         width: 300px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .box-boton{
     width: 100%;
     display: flex;
