@@ -136,6 +136,14 @@ p , h1 , h2{
 .img-right{
     transition: all 0.4s ease;
 }
+.img-right>img:hover{
+    filter: blur(3px);
+    transition: all 0.4s;
+}
+.img-left>img:hover{
+    filter: blur(3px);
+    transition: all 0.4s;
+}
 .img-left{
     transition: all 0.4s ease;
 }
