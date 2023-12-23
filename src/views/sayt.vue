@@ -8,11 +8,11 @@ import imgwidth from '@/components/imgwidth.vue'
         <div id="my-main">
             <div class="imgs">
                 <div class="img-left">
-                    <img src="../assets/sayare (1).jpg" alt="">
+                    <div class="img-lt"></div>
                     <p class="p-img">سیاره زحل(2023)</p>
                 </div>
                 <div class="img-right">
-                    <img src="../assets/sayare (2).jpg" alt="">
+                    <div class="img-rt"></div>
                     <p class="p-img">کهکشان راه شیری(2022)</p>
                 </div>
             </div>
@@ -60,15 +60,49 @@ p , h1 , h2{
     align-items: center;
     font-family: sanas;
 }
-.imgs img{
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
 .p-img{
     display: none;
-    text-align: center;
-    margin: 0px;
+    font-size: 20px;
+    z-index: 1;
+    color: rgb(154, 0, 0);
+}
+.img-right{
+    transition: all 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.img-rt{
+    background-image: url(../assets/sayare2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.img-lt{
+    background-image: url(../assets/sayare1.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.img-right:hover .img-rt{
+    filter: blur(3px);
+    transition: all 0.4s;
+}
+.img-left:hover .img-lt{
+    filter: blur(3px);
+    transition: all 0.4s;
+}
+.img-left{
+    transition: all 0.4s ease;
+    background-image: url(../assets/sayare1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 .img-right:hover{
   transform: scale(1.1);
@@ -133,20 +167,6 @@ p , h1 , h2{
     background-color: rgb(40, 0, 0);
     margin-top: 100px;
 }
-.img-right{
-    transition: all 0.4s ease;
-}
-.img-right>img:hover{
-    filter: blur(3px);
-    transition: all 0.4s;
-}
-.img-left>img:hover{
-    filter: blur(3px);
-    transition: all 0.4s;
-}
-.img-left{
-    transition: all 0.4s ease;
-}
 @font-face {
     font-family: sanas;
     src: url('@/assets/Iranian Sans.ttf');
@@ -186,6 +206,12 @@ p , h1 , h2{
     .img-right{
         width: 400px;
         height: 300px;
+    }
+}
+@media only screen and (max-width: 437px){
+    .img-right{
+        width: 320px;
+        height: 260px;
     }
 }
 </style>
