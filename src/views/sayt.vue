@@ -8,11 +8,11 @@ import imgwidth from '@/components/imgwidth.vue'
         <div id="my-main">
             <div class="imgs">
                 <div class="img-left">
-                    <div class="img-lt"></div>
+                    <div class="img-lt"><img src="../assets/sayare1.jpg" alt=""></div>
                     <p class="p-img">سیاره زحل(2023)</p>
                 </div>
                 <div class="img-right">
-                    <div class="img-rt"></div>
+                    <div class="img-rt"><img src="../assets/sayare2.jpg" alt=""></div>
                     <p class="p-img">کهکشان راه شیری(2022)</p>
                 </div>
             </div>
@@ -60,6 +60,10 @@ p , h1 , h2{
     align-items: center;
     font-family: sanas;
 }
+.imgs img{
+    width: 100%;
+    height: 100%;
+}
 .p-img{
     display: none;
     font-size: 20px;
@@ -74,31 +78,29 @@ p , h1 , h2{
     position: relative;
 }
 .img-rt{
-    background-image: url(../assets/sayare2.jpg);
-    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
+}
+.img-rt img{
+    width: 100%;
+    height: 100%;
 }
 .img-lt{
-    background-image: url(../assets/sayare1.jpg);
-    background-size: cover;
     width: 100%;
     height: 100%;
     position: absolute;
 }
-.img-right:hover .img-rt{
+.img-right:hover img{
     filter: blur(3px);
     transition: all 0.4s;
 }
-.img-left:hover .img-lt{
+.img-left:hover img{
     filter: blur(3px);
     transition: all 0.4s;
 }
 .img-left{
     transition: all 0.4s ease;
-    background-image: url(../assets/sayare1.jpg);
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -171,11 +173,11 @@ p , h1 , h2{
     font-family: sanas;
     src: url('@/assets/Iranian Sans.ttf');
 }
-@media only screen and (max-width: 371px) {
+/* @media only screen and (max-width: 371px) {
     .serch-box{
         display: none;
     }
-}
+} */
 @media only screen and (max-width: 1114px) {
     .img-left{
         width:350px;

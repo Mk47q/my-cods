@@ -74,34 +74,31 @@ h2{
     border-radius: 20px;
 }
 .box-4img p {
-    color: rgb(255, 159, 159);
+    color: rgb(255, 0, 0);
+    font-size: 18px;
 }
 .ab{
-    background-color: rgb(40, 0, 0);
     width: 100%;
-    height: 0px;
     border-radius: 20px;
-    transition: all 0.3s ease-in-out;
+    position: absolute;
+    bottom: 80px;
+    display: none;
 }
 .ab p {
     margin-top: 0px;
     text-align: center;
     padding: 4px;
-    height: 0;
-    width: 100%;
-    opacity: 0;
-    transform: translateY(-100%);
-    transition: all 0.5s ease-in-out;
+    width: 90%;
 }
 .my-imgs{
-    transition: all 0.5s ease-in-out;
+    position: relative;
+    margin-right: 5px;
 }
-.my-imgs:hover p{
-    opacity: 1;
-    transform: translateY(0);
+.my-imgs:hover img{
+    filter: blur(3px);
 }
-.my-imgs:hover .ab {
-    height: 175px;
+.my-imgs:hover .ab{
+    display: block;
 }
 .my-imgs{
     width: 250px;
@@ -113,7 +110,7 @@ h2{
     background-color: rgb(40, 0, 0);
     margin-top: 50px;
 }
-@media only screen and (max-width: 1035px) {
+@media only screen and (max-width: 1024px) {
     .box-4img{
         height: 490px;
     }
@@ -121,8 +118,11 @@ h2{
         width: 200px;
         height: 300px;
     }
+    .ab{
+        bottom: -10px;
+    }
 }
-@media only screen and (max-width: 834px) {
+@media only screen and (max-width: 768px) {
     .box-4img{
         height: 570px;
     }
@@ -133,8 +133,14 @@ h2{
     .my-imgs:hover .ab{
     height: 250px;
     }
+    .ab{
+        bottom: 30px;
+    }
+    .ab p{
+        font-size: 15px;
+    }
 }
-@media only screen and (max-width: 638px){
+@media only screen and (max-width: 602px){
     .box-4img{
         height: 590px;
     }
@@ -151,6 +157,9 @@ h2{
     .my-imgs:hover .ab {
     height: 175px;
     }
+    .ab{
+        bottom: 90px;
+    }
 }
 @media only screen and (max-width: 434px){
     .box-img1{
@@ -158,6 +167,9 @@ h2{
     }
     .box-img4{
         width: 300px;
+    }
+    .ab{
+        bottom: 70px;
     }
 }
 .box-boton{
