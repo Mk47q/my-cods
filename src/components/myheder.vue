@@ -58,6 +58,7 @@
     flex-wrap: wrap-reverse;
 }
 .box-left{
+    padding: 10px 20px 0px 10px;
     width: 300px;
     height: 100%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

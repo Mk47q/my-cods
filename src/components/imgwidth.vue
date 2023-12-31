@@ -21,7 +21,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .imgs2{
-    width: 96%;
+    width: 85%;
     height: 230px;
 }
 .imgs2 img{

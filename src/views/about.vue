@@ -61,8 +61,9 @@ h2{
     color: red;
 }
 .box-4img{
+    margin-bottom: 40px;
     width: 100%;
-    height: 585px;
+    /* height: 585px; */
     display: flex;
     justify-content: space-around;
     padding-top: 40px;
@@ -111,9 +112,6 @@ h2{
     margin-top: 50px;
 }
 @media only screen and (max-width: 1024px) {
-    .box-4img{
-        height: 490px;
-    }
     .my-imgs{
         width: 200px;
         height: 300px;
@@ -123,9 +121,6 @@ h2{
     }
 }
 @media only screen and (max-width: 768px) {
-    .box-4img{
-        height: 570px;
-    }
     .my-imgs{
         width: 150px;
         height: 300px;
@@ -141,9 +136,6 @@ h2{
     }
 }
 @media only screen and (max-width: 602px){
-    .box-4img{
-        height: 590px;
-    }
     .box-img2{
         display: none;
     }
@@ -192,6 +184,7 @@ h2{
     border-radius: 10px;
 }
 .box-sub-paragraf{
+    padding: 15px;
     width: 70%;
     display: flex;
     justify-content: flex-end;

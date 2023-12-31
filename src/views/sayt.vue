@@ -7,21 +7,21 @@ import imgwidth from '@/components/imgwidth.vue'
     <main>
         <div id="my-main">
             <div class="imgs">
-                <div class="img-left">
-                    <div class="img-lt"><img src="../assets/sayare1.jpg" alt=""></div>
+                <div class="img-left , leftVright">
+                    <div class="img-lt , gs"><img src="../assets/sayare1.jpg" alt=""></div>
                     <p class="p-img">سیاره زحل(2023)</p>
                 </div>
-                <div class="img-right">
-                    <div class="img-rt"><img src="../assets/sayare2.jpg" alt=""></div>
+                <div class="img-right , leftVright">
+                    <div class="img-rt , gs"><img src="../assets/sayare2.jpg" alt=""></div>
                     <p class="p-img">کهکشان راه شیری(2022)</p>
                 </div>
             </div>
             <div class="paragraf">
-                <h1>galaxy</h1>
+                <h1>Galaxy</h1>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quia alias, impedit sit ducimus nobis molestias est laudantium quod esse similique blanditiis ullam veniam! Architecto repudiandae officiis suscipit dolores! Laborum Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae recusandae iusto reiciendis quam expedita a amet rerum, illum modi excepturi soluta porro assumenda eum libero provident aut vero molestias doloribus Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolores, esse laboriosam incidunt sequi nisi nesciunt obcaecati quia voluptate quaerat, odit quos vero quas ex suscipit iusto inventore ad expedita Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni perspiciatis aspernatur mollitia modi nulla facere at, ad natus et iste id laborum expedita sunt dicta, consectetur ex tempore ratione eius Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis porro, nihil soluta quae impedit, facere minima neque dicta commodi dolores molestias sint!
                 </p>
-                <h1>nasa news</h1>
+                <h1>Nasa news</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, soluta cumque voluptatem ad corporis aut magnam repellat quidem similique numquam consequatur ipsam sapiente aspernatur pariatur nostrum eos? Enim, fugiat deserunt! Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis numquam ipsa doloremque laboriosam tenetur deleniti ad nostrum corporis dolorum earum est incidunt adipisci molestiae modi ea, quia provident error dolor! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, ducimus a pariatur nam corrupti rerum voluptatibus excepturi ad tempore ea eius ratione assumenda sed alias, eveniet provident magni laboriosam voluptatum! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas fuga unde ad, iste commodi, optio quis nisi numquam, voluptatibus velit dolorum inventore ab culpa odio repellat possimus adipisci dolorem blanditiis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum ducimus architecto minus eaque blanditiis nostrum ratione ab magnam, temporibus quas illum nam exercitationem in porro ullam aut, libero aperiam facilis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam hic delectus amet magnam, repudiandae animi blanditiis! Facilis, libero? Itaque nesciunt non nulla, culpa dignissimos quaerat illo nostrum harum delectus sit!</p>
             </div>
             <imgwidth></imgwidth>
@@ -63,6 +63,7 @@ p , h1 , h2{
 .imgs img{
     width: 100%;
     height: 100%;
+    border-radius: 20px;
 }
 .p-img{
     display: none;
@@ -70,63 +71,37 @@ p , h1 , h2{
     z-index: 1;
     color: rgb(154, 0, 0);
 }
-.img-right{
+.leftVright{
     transition: all 0.4s ease;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
-.img-rt{
+.gs{
     width: 100%;
     height: 100%;
     position: absolute;
 }
-.img-rt img{
-    width: 100%;
-    height: 100%;
-}
-.img-lt{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-}
-.img-right:hover img{
+.leftVright:hover img{
     filter: blur(3px);
     transition: all 0.4s;
 }
-.img-left:hover img{
-    filter: blur(3px);
-    transition: all 0.4s;
-}
-.img-left{
-    transition: all 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.img-right:hover{
+.leftVright:hover{
   transform: scale(1.1);
   transition: all 0.3s ease-in-out 0.1s;
 }
-.img-left:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease-in-out 0.1s;
-}
-.img-left:hover .p-img{
+.leftVright:hover .p-img{
     display: block;
 }
-.img-right:hover .p-img{
-    display: block;
-}
-.img-right , .img-left{
+.leftVright{
     width: 490px;
     height: 260px;
 }
 .paragraf{
-    width: 100%;
+    /* width: 100%; */
     margin-top: 12px;
+    padding: 20px;
 }
 .paragraf p{
     padding: 10px;
@@ -153,6 +128,7 @@ p , h1 , h2{
     border-radius: 10px;
 }
 .box-p{
+    padding: 0px 25px 0px 25px;
     width: 80%;
     height: 100%;
 }
