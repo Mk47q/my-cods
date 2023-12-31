@@ -1,5 +1,6 @@
 <script setup>
 import imgwidth from '@/components/imgwidth.vue'
+import about from '@/components/about.vue'
 </script>
 <template>
 <main>
@@ -7,32 +8,36 @@ import imgwidth from '@/components/imgwidth.vue'
         <imgwidth></imgwidth>
         <div class="box-4img">
             <div class="box-img1 , my-imgs">
-                <img src="../assets/nas1.jpg" alt="">
+                <about></about>
+                <!-- <img src="../assets/nas1.jpg" alt="">
                 <div class="ab">
                     <p>Richard Garroitt</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
-                </div>
+                </div> -->
             </div>
             <div class="box-img2 , my-imgs">
-                <img src="../assets/nas2.jpg" alt="">
+                <about></about>
+                <!-- <img src="../assets/nas2.jpg" alt="">
                 <div class="ab">
                     <p>Dennis Anthony Tito</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
-                </div>
+                </div> -->
             </div>
             <div class="box-img3 , my-imgs">
-                <img src="../assets/nas3.jpg" alt="">
+                <about></about>
+                <!-- <img src="../assets/nas3.jpg" alt="">
                 <div class="ab">
                     <p>Mark Shuttleworth</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
-                </div>
+                </div> -->
             </div>
             <div class="box-img4 , my-imgs">
-                <img src="../assets/nas4.jpg" alt="">
+                <about></about>
+                <!-- <img src="../assets/nas4.jpg" alt="">
                 <div class="ab">
                     <p>Anousheh Ansari</p>
                     <p>Lorem ipsum dolor sit, consectetur adipisicing elit. Quos, ea doloremque! Odit et, eum odio saepe optio deleniti fugit, accusantium officia neque quis 1995, placeat adipisci beatae cupiditate minima sint!</p>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="box-boton">
@@ -61,7 +66,7 @@ h2{
     color: red;
 }
 .box-4img{
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
     width: 100%;
     /* height: 585px; */
     display: flex;
@@ -114,28 +119,19 @@ h2{
 @media only screen and (max-width: 1024px) {
     .my-imgs{
         width: 200px;
-        height: 300px;
-    }
-    .ab{
-        bottom: -10px;
+        height: 27rem;
     }
 }
 @media only screen and (max-width: 768px) {
     .my-imgs{
         width: 150px;
-        height: 300px;
+        height: 28rem;
     }
     .my-imgs:hover .ab{
     height: 250px;
     }
-    .ab{
-        bottom: 30px;
-    }
-    .ab p{
-        font-size: 15px;
-    }
 }
-@media only screen and (max-width: 602px){
+@media only screen and (max-width: 628px){
     .box-img2{
         display: none;
     }
@@ -144,13 +140,10 @@ h2{
     }
     .my-imgs{
         width: 200px;
-        height: 400px;
+        height: 26rem;
     }
     .my-imgs:hover .ab {
     height: 175px;
-    }
-    .ab{
-        bottom: 90px;
     }
 }
 @media only screen and (max-width: 434px){
@@ -159,9 +152,6 @@ h2{
     }
     .box-img4{
         width: 300px;
-    }
-    .ab{
-        bottom: 70px;
     }
 }
 .box-boton{
