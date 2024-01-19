@@ -134,10 +134,24 @@
 }
 .list-hed li{
     margin-right: 25px;
+    position: relative;
 }
-a:hover{
+/* a:hover{
     border-bottom: 5px solid tomato;
     transition: all 0.1s ease-in-out;
+} */
+a::after{
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    width: 0;
+    left: 0;
+    height: 2.5px;
+    background-color: red;
+    transition: 0.5s ease-in-out;
+}
+a:hover::after{
+    width: 100%;
 }
 .list-hed a{
     text-decoration: none;

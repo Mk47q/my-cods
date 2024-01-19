@@ -45,7 +45,7 @@ body{
     /* margin-top: 4rem; */
     margin-left: auto;
     margin-right: auto;
-    background-color: #15273f;
+    background-color: #1a1d21;
     width: 100%;
 }
 .wrapper-boxs{
